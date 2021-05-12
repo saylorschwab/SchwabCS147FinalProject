@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: ProjectilePickup
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":101.5,"y":-30.25},"zoom":1.0,"elements":[{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{"tag":{"$content":"Player","$type":"System.String"}},"position":{"x":-283.0,"y":-161.0},"guid":"70d917de-628a-472e-b12f-f1a4b365c845","$version":"A","$type":"Bolt.SuperUnit","$id":"9"},{"kind":"Object","defaultValues":{"name":{"$content":"HasProjectile","$type":"System.String"},"object":null},"position":{"x":37.0,"y":-128.0},"guid":"aa5d2348-e5a4-4819-b2db-a3929af32036","$version":"A","$type":"Bolt.SetVariable","$id":"12"},{"type":"System.Boolean","value":{"$content":true,"$type":"System.Boolean"},"defaultValues":{},"position":{"x":-268.0,"y":20.0},"guid":"4fb93bbf-1b1c-4d2c-809f-4b220563a0c4","$version":"A","$type":"Bolt.Literal","$id":"14"},{"chainable":false,"member":{"name":"Destroy","parameterTypes":["UnityEngine.Object"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%obj":null},"position":{"x":340.0,"y":-96.0},"guid":"d1141b2b-ffd6-4dba-8496-cfea6c627967","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"defaultValues":{},"position":{"x":212.0,"y":22.0},"guid":"bf0b015d-67cd-4cef-807e-11d8fe0ac24a","$version":"A","$type":"Bolt.Self","$id":"19"},{"sourceUnit":{"$ref":"9"},"sourceKey":"target","destinationUnit":{"$ref":"12"},"destinationKey":"assign","guid":"3cf4a5d7-f23a-4e00-be62-b44a3f0113c6","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"assigned","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"f30eadfb-6db9-4e1e-9b23-394858231d63","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"object","destinationUnit":{"$ref":"12"},"destinationKey":"object","guid":"4a1d0821-dc10-452f-8946-60d5fe7b7c27","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"output","destinationUnit":{"$ref":"12"},"destinationKey":"input","guid":"9f065a0f-3dbd-45d4-9782-0acfe7e0d6bc","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"self","destinationUnit":{"$ref":"16"},"destinationKey":"%obj","guid":"46220401-000c-4d67-96bf-7d79268e6993","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 38c6bb67ed341403184cd8b2f5fb5837, type: 2}
